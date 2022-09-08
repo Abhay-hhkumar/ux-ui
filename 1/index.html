@@ -1,47 +1,48 @@
 <!Doctype html>
 <html>
-<head>
-	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+
 	<style>
-		body{background-color:#FFFCF6;
+		
+		*{box-sizing:border-box;}
+		body{background-color:#def4f856;
                  margin:0;
 		      }
-			  .heading{height:150px;text-align:center;box-shadow:1px 10px 8px 7px rgba(40, 132, 65, 0.087);
+
+			  .heading{height:100px;text-align:center;box-shadow:1px 10px 8px 7px rgba(40, 132, 65, 0.087);
 				background:#006A6A;color:rgb(255, 255, 255);
-			font-size:30px;display:flex;align-items:center;justify-content:space-around;}
+			font-size:35px;display:flex;align-items:center;justify-content:space-around;}
+
 			.heading img{margin-top:10px;}
+
+		    img{width:100%;border-radius:2% 2% 0 0;					     
+        		}
 		
-		img{width:100%;border-radius:2% 2% 0 0;
-			
-		     
-		}
-		.container .logic{grid-column:1/span 2;}
-
-		.container{height:auto;width:98%;
-			display:grid;margin:auto;margin-top:30px;margin-bottom:5%;
-			grid-template-columns:repeat(auto-fit,25rem);justify-content:center;
-			
+		  .container{width:90%;margin:auto;
+			display:grid;margin-top:30px;margin-bottom:5%;
+			grid-template-columns:repeat(auto-fit, 15rem);justify-content:center;			
 			grid-gap:30px 30px;
+		     }	
 
-		}	
-		footer{height:150px;background-color:rgba(62, 79, 67, 0.737);text-align:center;display:flex;align-items:center;flex-direction:column;justify-content:center;}
+		footer{height:150px;background-color:rgba(62, 79, 67, 0.797);text-align:center;display:flex;align-items:center;flex-direction:column;justify-content:center;transform:translate(0%,50%);}
 		footer p{color:white;letter-spacing:15px;margin:5px;}
-		@media only screen and (max-width:700px){
-			
+
+		@media only screen and (max-width:700px){			
 			footer p{letter-spacing:10px;}
 		}
+
 		@media only screen and (max-width:300px){
-			
-			footer p{letter-spacing:5px;}
-		}
+			.heading{font-size:28px;}
+			.container{grid-template-columns:10rem}
+			footer p{letter-spacing:1px;}
+		      }
 	</style>
 <body>
-	<div class="heading">User Experience <a href="..\index.html"><img src="..\1j.png" ></a></div>
-	
+	<div class="heading">User Experience <a href="..\index.html"><img src="..\1j.png" ></a></div>	
 	<div class="container">
-		
-		
+				
 		<img src="b5.jpg">	
 		<img src="b6.jpg">
 		<img src="b1.jpg">
@@ -60,6 +61,7 @@
 		
 		
 		
+
 	</div>
 	<footer>
 		<p>aa8aaagkp@gmail.com</p>
