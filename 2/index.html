@@ -1,42 +1,44 @@
 <!Doctype html>
 <html>
-<head>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	</head>
 	<style>
-		body{background-color:rgb(209, 240, 211);
+		*{box-sizing:border-box;}
+		body{background-color:#caeef14d;
                  margin:0;
 		      }
-		.heading{height:80px;text-align:center;box-shadow:1px 10px 8px 7px rgba(40, 132, 65, 0.119);
-			background-color:white;color:rgb(77, 125, 82);
-			font-size:30px;display:flex;align-items:center;justify-content:space-around;}
-			.j{grid-column:1/span 2;}
-		img{width:100%;border-radius:2% 2% 0 0;
-			
-		     
-		}
 
-		.container{width:90%;height:auto;
-			display:grid;margin:auto;margin-top:30px;margin-bottom:5%;
-			grid-template-columns:1fr 1fr 1fr 1fr;
-			
-			grid-gap:20px 20px;
+			  .heading{height:100px;text-align:center;box-shadow:1px 10px 8px 7px rgba(40, 132, 65, 0.087);
+				background:#006A6A;color:rgb(255, 255, 255);
+			font-size:35px;display:flex;align-items:center;justify-content:space-around;}
 
-		}
-		footer{height:80px;background-color:rgba(62, 79, 67, 0.459);text-align:center;display:flex;align-items:center;flex-direction:column;justify-content:center;}
+			.heading img{margin-top:10px;}
+
+		    img{width:100%;border-radius:2% 2% 0 0;					     
+        		}
+		
+		  .container{width:90%;margin:auto;
+			display:grid;margin-top:30px;margin-bottom:5%;
+			grid-template-columns:repeat(auto-fit, 15rem);justify-content:center;			
+			grid-gap:28px 28px;
+		     }	
+
+		footer{height:150px;background-color:rgba(62, 79, 67, 0.797);text-align:center;display:flex;align-items:center;flex-direction:column;justify-content:center;transform:translate(0%,50%);}
 		footer p{color:white;letter-spacing:15px;margin:5px;}
-		@media only screen and (max-width:700px){
-			.container{grid-template-columns:1fr 1fr;}
+
+		@media only screen and (max-width:700px){			
 			footer p{letter-spacing:10px;}
 		}
+
 		@media only screen and (max-width:300px){
-			.container{grid-template-columns:1fr;}
-			footer p{letter-spacing:5px;}
-			
-		}
+			.heading{font-size:28px;}
+			.container{grid-template-columns:10rem}
+			footer p{letter-spacing:1px;}
+		      }
 	</style>
 <body> 
-	<div class="heading">User Experience  <a href="..\index.html"><img src="..\1.png" ></a></div>
+	<div class="heading">User Experience  <a href="..\index.html"><img src="..\1j.png" ></a></div>
 	<div class="container">
 		<img src="1.jpg">
 		<img src="9.jpg">
